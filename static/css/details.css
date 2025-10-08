@@ -1,0 +1,492 @@
+body{
+    margin: 0;
+}
+
+#mySidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2c2c2c;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+#mySidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #b8b8b8;
+  display: block;
+  transition: 0.3s;
+  border-bottom: 1px solid #444;
+}
+
+#mySidebar a:hover {
+  color: #f1f1f1;
+}
+
+#mySidebar .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 30px;
+  margin-left: 50px;
+  color: #fff;
+}
+
+.dashboard img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.dashboard {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.sidebar-options {
+  position: absolute;
+  bottom: 25 rem;
+  width: 100%;
+}
+
+/* Dark background for navbar */
+.navbar {
+  background-color: #343a40 !important;
+}
+
+.navbar .nav-link, .navbar-brand {
+  color: #b8b8b8 !important;
+}
+
+.navbar .nav-link:hover {
+  color: #ffffff !important;
+}
+
+.navbar .btn-primary {
+  background-color: #007bff !important;
+  border-color: #007bff !important;
+}
+
+.weather-widget {
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+}
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color:#028090;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  .ram{
+    width:15rem;
+    height:15rem;
+   
+    background-color: white;
+    margin-top:3rem;
+    margin-left: 1rem;
+    border-radius: 30px;
+  }
+
+  .fname , .fnumber{
+    margin-left: 3rem;
+    font-size: larger;
+    font-weight: 500;
+    }
+    .fname{
+      margin-top: 1.5rem;
+    }
+    .ram img{
+        border-radius: 50px;
+        width: 6rem;
+        height: 5.5rem;
+        margin-left: 4rem;
+        margin-top: 1rem;
+        border: solid 6px #386641;
+      }
+
+  .crop{
+  
+    width:15rem;
+    height: 2rem;
+    margin-top:3rem;
+    border-radius: 10rem;
+    margin-left:1rem;
+    background-color: white;
+    text-align: center;
+  }
+  .seed{
+  
+    width:15rem;
+    height: 2rem;
+    margin-top:3rem;
+    border-radius: 10rem;
+    margin-left:1rem;
+    background-color: white;
+    text-align: center;
+  }
+  .soil{
+   
+    width:15rem;
+    height: 2rem;
+    margin-top:3rem;
+    border-radius: 10rem;
+    margin-left:1rem;
+    background-color: white;
+    text-align: center;
+  }
+  .view{
+   
+    width:15rem;
+    height: 2rem;
+    margin-top:3rem;
+    border-radius: 10rem;
+    margin-left:1rem;
+    background-color: white;
+    text-align: center;
+  }
+  .lang{
+   
+    width:15rem;
+    height: 2rem;
+    margin-top:3rem;
+    border-radius: 10rem;
+    margin-left:1rem;
+    background-color: white;
+    text-align: center;
+  }
+
+
+
+
+
+/* MANDI PRICE */
+
+.part1{
+    background-color: #6A994E;
+    display: flex;
+    height: 25vh;
+}
+
+.mandipriceimg{
+    width: 200px !important;
+}
+
+.image1{
+  width: 170px !important;
+}
+
+
+/* SATELLITE PROPERTY */
+
+.satellitediv{
+    background-color: white;
+    width: 20%;
+    height: 9rem;
+    border-radius: 3rem !important;
+    margin-left: 9rem;
+    margin-top: 1rem;
+    display: flex;
+}
+
+.satellite{
+    width: 100%;
+    border-radius: 80%;
+    height: 8rem;
+    margin-left: 0.4rem;
+    margin-top: 0.6rem;
+}
+
+.sateliteimage{
+    width: 45%;
+}
+
+.satellitetext{
+    width: 5rem !important;
+    margin-left: 1.2rem;
+    margin-top: 2.1rem;
+    font-size: xx-large;
+   margin-right: 0.8rem !important;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+
+/* SOIL TESTING */
+
+
+.soiltestingdiv{
+    background-color: white;
+    width: 20%;
+    height: 9rem;
+    border-radius: 3rem !important;
+    margin-left: 5rem;
+    margin-top: 1rem;
+    display: flex;
+}
+
+.soiltesting{
+    width: 100%;
+    border-radius: 80%;
+    height: 8rem;
+    margin-left: 0.4rem;
+    margin-top: 0.6rem;
+}
+
+.soiltestingimage{
+    width: 45%;
+}
+
+.soiltestingtext{
+    width: 5rem !important;
+    margin-left: 1.2rem;
+    margin-top: 2.1rem;
+    font-size: xx-large;
+   margin-right: 0.8rem !important;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+
+
+/* ADD CROP */
+
+.addcropdiv{
+    background-color: white;
+    width: 20%;
+    height: 9rem;
+    border-radius: 3rem !important;
+    margin-left: 5rem;
+    margin-top: 1rem;
+    display: flex;
+}
+
+.addcrop{
+    width: 100%;
+    border-radius: 80%;
+    height: 8rem;
+    margin-left: 0.4rem;
+    margin-top: 0.6rem;
+}
+
+.addcropimage{
+    width: 45%;
+}
+
+.addcroptext{
+    width: 5rem !important;
+    margin-left: 1.2rem;
+    margin-top: 2.1rem;
+    font-size: xx-large;
+   margin-right: 0.8rem !important;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+
+
+/* PART 2 */
+
+
+
+.column {
+  float: left;
+  width: 50% !important;
+  height: 60%;
+}
+.card1{
+  width: 70%;
+  margin-left: 6rem;
+  height: 100%;
+
+}
+
+/* CROP CALENDER */
+
+.heading1{
+  font-size: xx-large;
+  margin-top: 0.7rem;
+}
+.calenderbody{
+  background-color: white;
+  width: 100%;
+  height: 30rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+.bodynav{
+  display: flex;
+  background-color: #A7C957;
+  height: 4rem;
+  width: 100%;
+   border-top-left-radius: 2rem;
+   border-top-right-radius: 2rem;
+}
+.subhead{
+  padding-left: 1rem;
+  
+}
+.subhead1{
+font-size: x-large;
+color: white;
+
+}
+.subhead2{
+  font-size: medium;
+  color: white;
+}
+
+ 
+.wheat{
+  width: 18%;
+  border-radius: 70px;
+  margin-left: 15rem;
+  margin-top: 0.2rem;
+  height: 85%;
+}
+
+
+
+.cropimage{
+  width: 32.6rem;
+}
+
+.calenderfooter{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.calenderfooter1{
+  font-size: x-large;
+}
+.calenderfooter2{
+  font-size: x-large;
+}
+
+
+
+
+
+.card2{
+  width: 70%;
+  margin-left: 6rem;
+  height: 100%;
+
+}
+.heading2{
+  font-size: xx-large;
+  margin-top: 0.7rem;
+}
+.plan{
+  background-color: white;
+  width: 100%;
+  height: 30rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+.planhead{
+  color: white;
+  font-size: xx-large;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+}
+
+/* TOGGLE BUTTON */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-top: 1rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #bfe2b3;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #093a06;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.irrigationtype{
+  color: white;
+  font-size: large;
+  margin-left: 7rem;
+ 
+}
+
+.fieldmap{
+  margin-top: 2rem;
+  margin-left: 2.5rem;
+}
+
+.qualityreport{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1.4rem;
+}
+
+.npk , .ph {
+  border-radius: 20px;
+}

@@ -1,0 +1,255 @@
+ 
+ /* NAVIGATION */
+ 
+ 
+ 
+ 
+ .navbar.navbar-expand-lg{
+    background-color: white !important;
+    padding: 0 !important;
+}
+.img.img1{
+    margin:0 !important;
+    padding:0 !important;
+}
+.items{
+  margin-left: 10rem;
+}
+.items a{
+  margin-left: 2rem;
+  color:black !important;
+  font-size: 25px !important;
+  font-weight: bold !important;
+  
+}
+.weather{
+  text-decoration: none !important;
+  color: black;
+  font-size: 25px !important;
+  font-weight: bold !important;
+  margin-left: 1rem;
+}
+
+.navbar{
+  height:6rem;
+  width:100%;
+  background-color: rgb(146, 212, 146);
+
+}
+.navbar-brand{
+  margin-top: 2rem;
+  margin-left: 5rem;
+  color:white;
+}
+input{
+  border-radius: 20px !important;
+  width: 40rem !important;
+  margin-right: 15rem !important;
+
+}
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:rgb(75, 122, 75);
+    overflow-x: hidden;
+    transition: 0.5s;
+    /* padding-top: 60px; */
+  }
+ 
+  
+  
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: white !important;
+    cursor: pointer;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color:#028090;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  .ram{
+    width:15rem;
+    height:12rem;
+   
+    background-color: white;
+    margin-top:3rem;
+    margin-left: 1rem;
+    border-radius: 30px;
+  }
+  .ram img{
+    border-radius: 50px;
+    width: 5rem;
+    height: 5.5rem;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    border: solid 6px #386641;
+  }
+
+  
+  .crop{
+  
+    width:15rem;
+    height: 2rem;
+    margin-top:3rem;
+    border-radius: 10rem;
+    margin-left:1rem;
+    background-color: white;
+    text-align: center;
+  }
+  .seed{
+  
+    width:15rem;
+    height: 2rem;
+    margin-top:3rem;
+    border-radius: 10rem;
+    margin-left:1rem;
+    background-color: white;
+    text-align: center;
+  }
+  .soil{
+   
+    width:15rem;
+    height: 2rem;
+    margin-top:3rem;
+    border-radius: 10rem;
+    margin-left:1rem;
+    background-color: white;
+    text-align: center;
+  }
+  .view{
+   
+    width:15rem;
+    height: 2rem;
+    margin-top:3rem;
+    border-radius: 10rem;
+    margin-left:1rem;
+    background-color: white;
+    text-align: center;
+  }
+  .lang{
+   
+    width:15rem;
+    height: 2rem;
+    margin-top:3rem;
+    border-radius: 10rem;
+    margin-left:1rem;
+    background-color: white;
+    text-align: center;
+  }
+
+
+
+
+  /* FARMER PROFILE */
+
+  .column{
+    display: flex;
+    justify-content: space-evenly;
+  }
+.card1{
+  width: 14vw;
+  height: 30vh;
+  border: solid 2px black;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  margin-left: 3vw;
+  margin-top: 5vh;
+ 
+}
+  .card1 img{
+    border-radius: 50px;
+    width: 5rem;
+    height: 5.5rem;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    border: solid 6px #386641;
+  }
+
+  .fname , .fnumber{
+  margin-left: 3rem;
+  font-size: larger;
+  font-weight: 500;
+  }
+  .fname{
+    margin-top: 1.5rem;
+  }
+  
+
+
+/* 
+  CROP PLAN */
+
+
+  .card2{
+    width: 60vw;
+    height: 30vh;
+    background-color: #c1e4ba;
+    margin-top: 2.5rem;
+    border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  }
+  .name{
+  font-size: x-large;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  font-style: italic;
+  }
+
+  .list{
+    margin-top: 1.5rem;
+    width: 10rem;
+    margin-left: 5rem !important;;
+  }
+.item1 , .item2, .item3 , .item4{
+background-color: rgb(219, 234, 220);
+margin-top: 0.5rem;
+padding-left: 19px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.planimage img{
+  margin-left: 17rem;
+  height: 12rem;
+  margin-top: 0.8rem;
+}
+
+.cropsearch{
+  width: 17rem !important;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  padding: 9px;
+}
+
+.body{
+  background-color: rgb(219, 234, 220);
+  height: 160vh;
+  width: 95%;
+  border-radius: 30px;
+  margin-left: 2.5vw;
+  margin-top: 9vh;
+}
+
+.crops{
+  margin-left: 2.3rem;
+  width: 95%;
+  border-radius: 30px;
+  margin-top: 3rem;
+}

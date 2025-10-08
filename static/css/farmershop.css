@@ -1,0 +1,371 @@
+.navbar.navbar-expand-lg{
+    background-color: white !important;
+    padding: 0 !important;
+}
+.img.img1{
+    margin:0 !important;
+    padding:0 !important;
+}
+.items{
+  margin-left: 10rem;
+}
+h2{  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+a{text-decoration: none !important;}
+
+.items a{
+  margin-left: 2rem;
+  color:black !important;
+  font-size: 25px !important;
+  font-weight: bold !important;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+.weather{
+  text-decoration: none !important;
+  color: black;
+  font-size: 25px !important;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold !important;
+  margin-left: 1rem;
+}
+
+.navbar{
+  height:6rem;
+  width:100%;
+  background-color: rgb(146, 212, 146);
+
+}
+.navbar-brand{
+  margin-top: 2rem;
+  margin-left: 5rem;
+  color:white;
+}
+input{
+  border-radius: 20px !important;
+  width: 40rem !important;
+  margin-right: 15rem !important;
+
+}
+header{
+  background-color: #A7C957;
+  color:white;
+  width:100%;
+}
+.title{
+  margin-left: 5vh;
+}
+.icon-cart{
+  margin-right: 5vh;
+  display:flex;
+  justify-content: center;
+}
+.count{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #386641;
+  border-radius: 50%;
+  width:6vh !important;
+  height:6vh !important;
+  display:flex;
+  justify-content: center;
+  margin-right: 5vh;
+  font-size:4vh;
+}
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:rgb(75, 122, 75);
+    overflow-x: hidden;
+    transition: 0.5s;
+    /* padding-top: 60px; */
+  }
+ 
+  
+  
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    
+    margin-left: 50px;
+    color: white !important;
+    cursor: pointer;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-image: url("image/logoimg.png");
+    background-size: cover;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    height:inherit;
+    width:6rem;
+  }
+  .ram{
+    width:15rem;
+    height:15rem;
+   
+    background-color: white;
+    margin-top:3rem;
+    margin-left: 1rem;
+    border-radius: 30px;
+  }
+  .crop{
+  
+    width:15rem;
+    height: 2rem;
+    margin-top:3rem;
+    border-radius: 10rem;
+    margin-left:1rem;
+    background-color: white;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .seed{
+  
+    width:15rem;
+    height: 2rem;
+    margin-top:3rem;
+    border-radius: 10rem;
+    margin-left:1rem;
+    background-color: white;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .soil{
+   
+    width:15rem;
+    height: 2rem;
+    margin-top:3rem;
+    border-radius: 10rem;
+    margin-left:1rem;
+    background-color: white;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .view{
+   
+    width:15rem;
+    height: 2rem;
+    margin-top:3rem;
+    border-radius: 10rem;
+    margin-left:1rem;
+    background-color: white;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .lang{
+   
+    width:15rem;
+    height: 2rem;
+    margin-top:8rem;
+    border-radius: 10rem;
+    margin-left:1rem;
+    background-color: white;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  #cart{
+    display:flex;
+    justify-content: flex-start;
+  }
+  #count{
+    margin-top: 0%;
+    margin-left: 3vh;
+  }
+  .pro-container
+  { width:100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  body{
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    width: 900px;
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+}
+svg{
+    width: 30px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.title{
+    font-size: xx-large;
+}
+.listProduct .item img{
+   height:16rem;
+    width: 90%;
+    filter: drop-shadow(0 10px 20px #0009);
+}
+.listProduct{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.listProduct .item{
+    background-color: #E3F2CF;
+    padding: 20px;
+    border-radius: 20px;
+}
+.listProduct .item h2{
+    font-weight: 500;
+    font-size: large;
+}
+.listProduct .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+.listProduct .item button{
+    background-color: #353432;
+    color: #eee;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+/* cart */
+h1{
+  padding-bottom: 10vh !important;
+  margin-bottom: 10vh !important;
+}
+.cartTab{
+    width: 400px;
+    background-color:#386641;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+body.showCart .cartTab{
+    right: 0;
+}
+body.showCart .container{
+    transform: translateX(-250px);
+}
+.cartTab h1{
+    padding: 20px;
+    margin-top:3vh;
+    margin-bottom:10vh !important;
+    font-weight: 300;
+    background-color: white;
+    color:#386641;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.addCart:active{
+  background-color: white !important;
+  color:black !important;
+  
+}
+.cartTab button{
+    background-color:#E3F2CF;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cartTab .close{
+    background-color: #eee;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.checkOut{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+
+}
+.listCart .item img{
+  margin-top: 10vh !important;
+    width: 100%;
+}
+.listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+}
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+}
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+.listCart{
+    overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+.price{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 3vh !important;
+}
+@media only screen and (max-width: 992px) {
+    .listProduct{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .listProduct{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.fname , .fnumber{
+  margin-left: 3rem;
+  font-size: larger;
+  font-weight: 500;
+  }
+  .fname{
+    margin-top: 1.5rem;
+  }
+  .ram img{
+      border-radius: 50px;
+      width: 6rem;
+      height: 5.5rem;
+      margin-left: 4rem;
+      margin-top: 1rem;
+      border: solid 6px #386641;
+    }

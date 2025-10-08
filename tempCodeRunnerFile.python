@@ -1,0 +1,70 @@
+from kivy.app import App
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.label import Label
+from kivy.uix.textinput import TextInput
+from kivy.uix.button import Button
+from kivy.clock import Clock
+from datetime import datetime, timedelta
+
+class WaterReminderApp(App):
+    def build(self):
+        self.reminder_interval = 60  # Default interval in minutes
+        self.next_reminder_time = datetime.now() + timedelta(minutes=self.reminder_interval)
+
+        self.layout = BoxLayout(orientation='vertical', padding=20, spacing=10)
+
+        self.title_label = Label(text="Water Intake Reminder", font_size=24, size_hint=(1, 0.2))
+        self.layout.add_widget(self.title_label)
+
+        self.instruction_label = Label(text="Set reminder interval (minutes):", font_size=18, size_hint=(1, 0.2))
+        self.layout.add_widget(self.instruction_label)
+
+        self.interval_input = TextInput(text=str(self.reminder_interval), multiline=False, font_size=18, size_hint=(1, 0.2))
+        self.layout.add_widget(self.interval_input)
+
+        self.set_button = Button(text="Set Interval", font_size=18, size_hint=(1, 0.2))
+        self.set_button.bind(on_press=self.set_interval)
+        self.layout.add_widget(self.set_button)
+
+        self.start_button = Button(text="Start Reminder", font_size=18, size_hint=(1, 0.2))
+        self.start_button.bind(on_press=self.start_reminder)
+        self.layout.add_widget(self.start_button)
+
+        self.status_label = Label(text="Status: Idle", font_size=16, size_hint=(1, 0.2))
+        self.layout.add_widget(self.status_label)
+
+        return self.layout
+
+    def set_interval(self, instance):
+        try:
+            interval = int(self.interval_input.text)
+            if interval > 0:
+                self.reminder_interval = interval
+                self.next_reminder_time = datetime.now() + timedelta(minutes=self.reminder_interval)
+                self.status_label.text = f"Reminder interval set to {interval} minutes."
+            else:
+                self.status_label.text = "Error: Please enter a positive number."
+        except ValueError:
+            self.status_label.text = "Error: Invalid input. Please enter a number."
+
+    def start_reminder(self, instance):
+        self.status_label.text = f"Next reminder at: {self.next_reminder_time.strftime('%H:%M:%S')}"
+        Clock.schedule_interval(self.check_reminder, 1)
+
+    def check_reminder(self, dt):
+        now = datetime.now()
+        if now >= self.next_reminder_time:
+            self.show_reminder()
+            self.next_reminder_time = now + timedelta(minutes=self.reminder_interval)
+        self.status_label.text = f"Next reminder at: {self.next_reminder_time.strftime('%H:%M:%S')}"
+
+    def show_reminder(self):
+        from plyer import notification
+        notification.notify(
+            title="Water Reminder",
+            message="It's time to drink water!",
+            timeout=10
+        )
+
+if __name__ == "__main__":
+    WaterReminderApp().run()
